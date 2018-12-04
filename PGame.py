@@ -11,24 +11,24 @@ def play(numPlayers):
 
     random.shuffle(playerStack)
 
-    shuffle() # cards
+    deck = shuffle() # cards
 
   
     for y in range(0,2,1):
         for x in playerStack:
-            playerStack[y,x] = cardArr[count]
+            playerStack[y,x] = deck[count]
             cardPlacement+=1
     
-    
+    tableCards
 
 def shuffle():
     #0-12 hearts
     #13-25 spades
     #26-38 diamonds
     #29-51 clubs
-
-    #return array of cards
-    cardArr[] = 1
-    return cardArr
+    for i in range(0,52,1):
+        deckArr[i] = i
+    random.shuffle(deckArr)
+    return deckArr
 
  

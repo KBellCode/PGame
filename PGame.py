@@ -83,4 +83,47 @@ def shuffle():
         deckQ.enqueue(deckArr[i])
     return deckQ
 
- 
+top = " ____ "
+upper = "/    \""
+midUPLow = "|    |"
+content = str("| " + i +  " |")
+lower = "\____/"
+
+cardImg = [top, upper, midUPLow, midUPLow, lower]
+def drawcards(tableCards):
+    for i in range(0,6,1):
+        if (i==3):
+            for k in tableCards:
+                content = str("| " + i +  " |")
+                #concat content
+        for j in tableCards:
+            cardImg[]
+
+def cardnumrules(num):
+    result = []
+    if (num > -1 and num < 13):
+        result[1] = 'H'
+    elif (num > 12 and num < 26):
+        result[1] = 'S'
+        num = num-13
+    elif (num > 25 and num < 39):
+        result[1] = 'D'
+        num = num-26
+    else:
+        result[1] = 'C'
+        num = num-39
+    
+    #------------------------
+    if(num > -1 and num < 9):
+        result[0] = num+2
+    elif (num == 12):
+        result[0] = 'A'
+    elif (num == 11):
+        result[0] = 'K'
+    elif (num == 10):
+        result[0] = 'Q'
+    else:
+        result[0] = 'J'
+    return result
+def evaluate(tableCards, playerStack):
+    

@@ -1,5 +1,8 @@
 import random
 cardPlacement = 0
+placementPoint = 0
+transitCount = 0
+deckCount = 0
 
 def play(numPlayers):
     #shuffle
@@ -11,15 +14,19 @@ def play(numPlayers):
 
     random.shuffle(playerStack)
 
-    deck = shuffle() # cards
+    #you will always be player 0
 
+    deck = shuffle() # cards
+    transitDeck = []
   
     for y in range(0,2,1):
         for x in playerStack:
-            playerStack[y,x] = deck[count]
+            playerStack[y,x] = deck[cardPlacement]
+            transitDeck[transitCount] = deck[cardPlacement]
             cardPlacement+=1
     
-    tableCards
+    tableCards = []
+    tableCards[0] = deck
 
 def shuffle():
     #0-12 hearts

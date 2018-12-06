@@ -126,4 +126,4 @@ def cardnumrules(num):
         result[0] = 'J'
     return result
 def evaluate(tableCards, playerStack):
-    
+    #

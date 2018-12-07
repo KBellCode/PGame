@@ -125,5 +125,22 @@ def cardnumrules(num):
     else:
         result[0] = 'J'
     return result
-def evaluate(tableCards, playerStack):
-    #
+
+def evaluateHand(tableCards, playerStack):
+    #Also evaluate the table cards with each other
+    #for each card in hand evaluate
+    #for each card on table
+    # is the card number the same
+    # is the card suit the same
+    # add in number points and suit points
+    # evaluate colours
+    # if they equal, 3 points, if
+
+def evaluate(card1[], card2[]):
+    #get points
+    if (card1[0] == card2[0]):
+        #number same
+        points = 5
+    elif (card1[1] == card2[1]):
+        #suit same
+        

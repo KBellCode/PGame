@@ -140,7 +140,14 @@ def evaluate(card1[], card2[]):
     #get points
     if (card1[0] == card2[0]):
         #number same
-        points = 5
+        points += 5
     elif (card1[1] == card2[1]):
         #suit same
-        
+        projPoints +=3
+    elif (card1[2] == card2[2]):
+        #colour
+        projPoints += 3
+    
+    #identify color
+    #you need projected points and actual points, to show that you could get a flush but you will only know by the fourth or fifth card 
+
